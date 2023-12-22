@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind
+namespace UIToolkitCodex
 {
     public readonly struct Rem
     {

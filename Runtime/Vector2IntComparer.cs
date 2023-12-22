@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace CrossPlatformUtilities.Runtime.SharedFeatures
+namespace UIToolkitCodex
 {
     public class Vector2IntComparer : IComparer<Vector2Int>
     {

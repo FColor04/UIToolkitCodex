@@ -1,6 +1,6 @@
 {
     "name": "UIToolkitCodex",
-    "rootNamespace": "",
+    "rootNamespace": "UIToolkitCodex",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

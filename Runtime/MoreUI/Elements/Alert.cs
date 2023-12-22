@@ -1,5 +1,5 @@
-﻿using Plugins.CrossPlatformUtilities.UniWind.Microtypes;
-using Plugins.CrossPlatformUtilities.UniWind.Palettes;
+﻿using UIToolkitCodex;
+using UIToolkitCodex.Microtypes;
 using UnityEngine;
 using UnityEngine.UIElements;
 

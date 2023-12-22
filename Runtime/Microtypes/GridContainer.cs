@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using CrossPlatformUtilities.Runtime.SharedFeatures;
 using UnityEngine;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.Microtypes
+namespace UIToolkitCodex.Microtypes
 {
     public struct GridContainer<T>
     {

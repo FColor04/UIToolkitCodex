@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.Microtypes
+namespace UIToolkitCodex.Microtypes
 {
     public readonly struct Edges<T>
     {

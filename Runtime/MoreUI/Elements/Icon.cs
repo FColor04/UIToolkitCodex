@@ -1,4 +1,5 @@
-﻿using Plugins.CrossPlatformUtilities.UniWind.Palettes;
+﻿using UIToolkitCodex;
+using UIToolkitCodex.Palettes;
 using UnityEngine;
 using UnityEngine.UIElements;
 

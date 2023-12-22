@@ -1,7 +1,7 @@
-﻿using Plugins.CrossPlatformUtilities.UniWind.Microtypes;
+﻿using UIToolkitCodex.Microtypes;
 using UnityEngine;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.Palettes
+namespace UIToolkitCodex.Palettes
 {
     public static class TailwindPalette
     {

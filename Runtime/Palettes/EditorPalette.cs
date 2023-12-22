@@ -1,10 +1,10 @@
-﻿using Plugins.CrossPlatformUtilities.UniWind.Microtypes;
+﻿using UIToolkitCodex.Microtypes;
 using UnityEditor;
 using UnityEngine;
 #if UNITY_EDITOR
 #endif
 
-namespace Plugins.CrossPlatformUtilities.UniWind.Palettes
+namespace UIToolkitCodex.Palettes
 {
     public static class EditorPalette
     {

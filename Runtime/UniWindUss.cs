@@ -1,10 +1,10 @@
-﻿using Plugins.CrossPlatformUtilities.UniWind.Microtypes;
+﻿using UIToolkitCodex.Microtypes;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind
+namespace UIToolkitCodex
 {
-    public static class UniWindUss
+    public static class UIToolkitCodex
     {
         //Background
         public static IStyle Bg(this IStyle style, StyleColor color)

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI
+namespace UIToolkitCodex.MoreUGUI
 {
     public class FlexibleLayoutGroup : LayoutGroup
     {

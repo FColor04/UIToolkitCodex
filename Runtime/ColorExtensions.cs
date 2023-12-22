@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using UIToolkitCodex.Palettes;
+using UnityEngine;
 
-namespace Plugins.CrossPlatformUtilities.UniWind
+namespace UIToolkitCodex
 {
     public static class ColorExtensions
     {
@@ -25,6 +26,11 @@ namespace Plugins.CrossPlatformUtilities.UniWind
         public static Color Fade(this Color source, float amount)
         {
             return new Color(source.r, source.g, source.b, amount);
+        }
+        
+        public static Color Pick(this (Color, Color) source, bool inverse = false)
+        {
+            return EditorPalette.IsDarkMode ^ inverse ? source.Item2 : source.Item1;
         }
     }
 }

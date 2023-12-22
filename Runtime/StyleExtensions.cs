@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind
+namespace UIToolkitCodex
 {
     public static class StyleExtensions
     {
         public static T Stylize<T>(this T ve, Action<IStyle> process) where T : VisualElement
         {
             process(ve.style);
+            return ve;
+        }
+        
+        public static T DeferredStylize<T>(this T ve, Action<IStyle> process, string query = "") where T : VisualElement
+        {
+            ve.schedule.Execute(() =>
+            {
+                if(!string.IsNullOrWhiteSpace(query))
+                    process(ve.Q(query).style);
+                else
+                    process(ve.style);
+            });
             return ve;
         }
 

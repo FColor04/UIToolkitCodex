@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind
+namespace UIToolkitCodex
 {
     public static class VisualElementExtensions
     {

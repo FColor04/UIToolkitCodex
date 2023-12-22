@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Plugins.CrossPlatformUtilities.UniWind
+namespace UIToolkitCodex
 {
     public static class RemUtility
     {
