@@ -1,8 +1,13 @@
 {
-    "name": "UniWind",
+    "name": "UIToolkitCodex.Editor",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
+    "references": [
+        "MoreUI",
+        "UIToolkitCodex"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

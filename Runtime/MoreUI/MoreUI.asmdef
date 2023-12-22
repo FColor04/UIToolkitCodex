@@ -3,7 +3,7 @@
     "rootNamespace": "",
     "references": [
         "Unity.InputSystem",
-        "UniWind"
+        "UIToolkitCodex"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
