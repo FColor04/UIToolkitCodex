@@ -1,0 +1,22 @@
+{
+  "name": "com.novareactor.uitoolkitcodex",
+  "version": "1.2.3",
+  "displayName": "UIToolkit Codex",
+  "description": "Code extensions for UI Toolkit for UIElements editors without uxml's or for cleaner UIE coding",
+  "unity": "2020.1",
+  "documentationUrl": "https://github.com/FColor04/UIToolkitCodex",
+  "licensesUrl": "https://github.com/FColor04/UIToolkitCodex/blob/main/LICENSE",
+  "keywords": [
+    "UIToolkit",
+    "UIElements",
+    "UIE",
+    "Extensions",
+    "Utility",
+    "UI"
+  ],
+  "author": {
+    "name": "FColor04",
+    "email": "marcinure1@gmail.com",
+    "url": "https://github.com/FColor04"
+  }
+}

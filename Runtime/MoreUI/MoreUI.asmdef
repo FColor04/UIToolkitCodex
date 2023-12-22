@@ -1,0 +1,17 @@
+{
+    "name": "MoreUI",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "UniWind"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

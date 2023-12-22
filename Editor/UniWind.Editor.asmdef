@@ -1,0 +1,19 @@
+{
+    "name": "UniWind.Editor",
+    "rootNamespace": "",
+    "references": [
+        "MoreUI",
+        "UniWind"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
