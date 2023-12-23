@@ -31,7 +31,7 @@ namespace UIToolkitCodex.MoreUGUI
             {
                 fitX = true;
                 fitY = true;
-                float squareRoot = Mathf.Sqrt(transform.childCount);
+                var squareRoot = Mathf.Sqrt(transform.childCount);
                 rows = Mathf.CeilToInt(squareRoot);
                 columns = Mathf.CeilToInt(squareRoot);
             }
@@ -42,26 +42,28 @@ namespace UIToolkitCodex.MoreUGUI
                 case FitType.Uniform:
                     break;
                 case FitType.Width or FitType.FixedColumns:
-                    rows = Mathf.CeilToInt(transform.childCount / (float) columns);
+                    rows = Mathf.CeilToInt(transform.childCount / (float)columns);
                     break;
                 case FitType.Height or FitType.FixedRows:
-                    columns = Mathf.CeilToInt(transform.childCount / (float) rows);
+                    columns = Mathf.CeilToInt(transform.childCount / (float)rows);
                     break;
             }
 
-            Rect parentRect = rectTransform.rect;
+            var parentRect = rectTransform.rect;
             var parentWidth = parentRect.width;
             var parentHeight = parentRect.height;
 
-            var cellWidth = parentWidth / columns - spacing.x / columns * (columns - 1) - padding.left / (float) columns - padding.right / (float) columns;
-            var cellHeight = parentHeight / rows - spacing.y / rows * (rows - 1) - padding.top / (float) rows - padding.bottom / (float) rows;
+            var cellWidth = parentWidth / columns - spacing.x / columns * (columns - 1) -
+                            padding.left / (float)columns - padding.right / (float)columns;
+            var cellHeight = parentHeight / rows - spacing.y / rows * (rows - 1) - padding.top / (float)rows -
+                             padding.bottom / (float)rows;
 
             cellSize = new Vector2(fitX ? cellWidth : cellSize.x, fitY ? cellHeight : cellSize.y);
 
-            int rowCount = 0;
-            int columnCount = 0;
+            var rowCount = 0;
+            var columnCount = 0;
 
-            for (int i = 0; i < rectChildren.Count; i++)
+            for (var i = 0; i < rectChildren.Count; i++)
             {
                 rowCount = i / columns;
                 columnCount = i % columns;
@@ -78,17 +80,14 @@ namespace UIToolkitCodex.MoreUGUI
 
         public override void CalculateLayoutInputVertical()
         {
-
         }
 
         public override void SetLayoutHorizontal()
         {
-
         }
 
         public override void SetLayoutVertical()
         {
-
         }
     }
 }

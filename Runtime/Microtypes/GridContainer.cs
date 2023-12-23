@@ -23,16 +23,11 @@ namespace UIToolkitCodex.Microtypes
         {
             elements.Add((position, size, element));
             var minPos = min;
-            for (int i = 0; i < elements.Count; i++)
-            {
-                minPos = Vector2Int.Min(minPos, elements[i].position);
-            }
+            for (var i = 0; i < elements.Count; i++) minPos = Vector2Int.Min(minPos, elements[i].position);
             min = minPos;
             var maxSize = Vector2Int.zero;
-            for (int i = 0; i < elements.Count; i++)
-            {
+            for (var i = 0; i < elements.Count; i++)
                 maxSize = Vector2Int.Max(this.size, elements[i].position - min + elements[i].size);
-            }
             this.size = maxSize;
         }
 
@@ -41,7 +36,7 @@ namespace UIToolkitCodex.Microtypes
             var ordered = elements.OrderBy(el => el.position, new Vector2IntComparer());
             var min = this.min;
             var size = this.size;
-            return ordered.Select(el => (((Vector2) el.position - min) / size, ((Vector2) el.size) / size, el.element));
+            return ordered.Select(el => (((Vector2)el.position - min) / size, (Vector2)el.size / size, el.element));
         }
     }
 }

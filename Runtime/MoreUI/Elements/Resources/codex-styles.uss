@@ -1,0 +1,9 @@
+Icon.info {
+    --icon: url("../../../Icons/info.png");
+}
+Icon.warning {
+    --icon: url("../../../Icons/alert-triangle.png");
+}
+Icon.error {
+    --icon: url("../../../Icons/alert-octagon.png");
+}

@@ -2,16 +2,16 @@
 using UnityEditor;
 using UnityEditor.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
+namespace UIToolkitCodex.Elements
 {
-    public class PreviewField : PropertyField
+    public class ReadOnlyField : PropertyField
     {
-        public PreviewField() : base()
+        public ReadOnlyField()
         {
             SetEnabled(false);
         }
 
-        public PreviewField(SerializedProperty property) : base(property)
+        public ReadOnlyField(SerializedProperty property) : base(property)
         {
             SetEnabled(false);
         }

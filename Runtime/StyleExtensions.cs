@@ -12,12 +12,12 @@ namespace UIToolkitCodex
             process(ve.style);
             return ve;
         }
-        
+
         public static T DeferredStylize<T>(this T ve, Action<IStyle> process, string query = "") where T : VisualElement
         {
             ve.schedule.Execute(() =>
             {
-                if(!string.IsNullOrWhiteSpace(query))
+                if (!string.IsNullOrWhiteSpace(query))
                     process(ve.Q(query).style);
                 else
                     process(ve.style);
@@ -29,10 +29,7 @@ namespace UIToolkitCodex
             where T : VisualElement
         {
             var arr = elements.ToArray();
-            for (int i = 0; i < arr.Length; i++)
-            {
-                process(arr[i].style, i);
-            }
+            for (var i = 0; i < arr.Length; i++) process(arr[i].style, i);
 
             return elements;
         }

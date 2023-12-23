@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI
+namespace UIToolkitCodex
 {
     public class ResizeManipulator : PointerManipulator
     {

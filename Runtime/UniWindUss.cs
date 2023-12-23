@@ -13,7 +13,18 @@ namespace UIToolkitCodex
             return style;
         }
 
+        #region Overflow
+
+        public static IStyle OverflowHidden(this IStyle style)
+        {
+            style.overflow = new StyleEnum<Overflow>(Overflow.Hidden);
+            return style;
+        }
+
+        #endregion
+
         #region Size
+
         public static IStyle W(this IStyle style, StyleLength width)
         {
             style.width = width;
@@ -49,9 +60,11 @@ namespace UIToolkitCodex
             style.maxHeight = maxHeight;
             return style;
         }
+
         #endregion
 
         #region Padding
+
         public static IStyle P(this IStyle style, Edges<float> value)
         {
             return style.P(value.Convert<StyleLength>(input => input));
@@ -65,9 +78,11 @@ namespace UIToolkitCodex
             style.paddingLeft = value.left;
             return style;
         }
+
         #endregion
 
         #region Margin
+
         public static IStyle M(this IStyle style, Edges<float> value)
         {
             return style.M(value.Convert<StyleLength>(input => input));
@@ -81,9 +96,11 @@ namespace UIToolkitCodex
             style.marginLeft = value.left;
             return style;
         }
+
         #endregion
 
         #region Border
+
         //Border Thickness
 
         public static IStyle Border(this IStyle style, Edges<float> thickness)
@@ -131,6 +148,7 @@ namespace UIToolkitCodex
             style.borderTopLeftRadius = radius.topLeft;
             return style;
         }
+
         #endregion
 
         #region Display
@@ -227,6 +245,7 @@ namespace UIToolkitCodex
             style.flexWrap = new StyleEnum<Wrap>(Wrap.WrapReverse);
             return style;
         }
+
         #endregion
 
         #region Position
@@ -243,41 +262,47 @@ namespace UIToolkitCodex
             return style;
         }
 
-        public static IStyle Top(this IStyle style, Length length) => style.Top((StyleLength)length);
+        public static IStyle Top(this IStyle style, Length length)
+        {
+            return style.Top((StyleLength)length);
+        }
+
         public static IStyle Top(this IStyle style, StyleLength length)
         {
             style.top = length;
             return style;
         }
 
-        public static IStyle Right(this IStyle style, Length length) => style.Right((StyleLength)length);
+        public static IStyle Right(this IStyle style, Length length)
+        {
+            return style.Right((StyleLength)length);
+        }
+
         public static IStyle Right(this IStyle style, StyleLength length)
         {
             style.right = length;
             return style;
         }
 
-        public static IStyle Left(this IStyle style, Length length) => style.Left((StyleLength)length);
+        public static IStyle Left(this IStyle style, Length length)
+        {
+            return style.Left((StyleLength)length);
+        }
+
         public static IStyle Left(this IStyle style, StyleLength length)
         {
             style.left = length;
             return style;
         }
 
-        public static IStyle Bottom(this IStyle style, Length length) => style.Bottom((StyleLength)length);
+        public static IStyle Bottom(this IStyle style, Length length)
+        {
+            return style.Bottom((StyleLength)length);
+        }
+
         public static IStyle Bottom(this IStyle style, StyleLength length)
         {
             style.bottom = length;
-            return style;
-        }
-
-        #endregion
-
-        #region Overflow
-
-        public static IStyle OverflowHidden(this IStyle style)
-        {
-            style.overflow = new StyleEnum<Overflow>(Overflow.Hidden);
             return style;
         }
 
@@ -288,7 +313,9 @@ namespace UIToolkitCodex
         public static IStyle Bold(this IStyle style)
         {
             var current = style.unityFontStyleAndWeight.value;
-            var newFontStyle = current is FontStyle.Italic or FontStyle.BoldAndItalic ? FontStyle.BoldAndItalic : FontStyle.Bold;
+            var newFontStyle = current is FontStyle.Italic or FontStyle.BoldAndItalic
+                ? FontStyle.BoldAndItalic
+                : FontStyle.Bold;
             style.unityFontStyleAndWeight = new StyleEnum<FontStyle>(newFontStyle);
             return style;
         }
@@ -302,7 +329,9 @@ namespace UIToolkitCodex
         public static IStyle Italic(this IStyle style)
         {
             var current = style.unityFontStyleAndWeight.value;
-            var newFontStyle = current is FontStyle.Bold or FontStyle.BoldAndItalic ? FontStyle.BoldAndItalic : FontStyle.Italic;
+            var newFontStyle = current is FontStyle.Bold or FontStyle.BoldAndItalic
+                ? FontStyle.BoldAndItalic
+                : FontStyle.Italic;
             style.unityFontStyleAndWeight = new StyleEnum<FontStyle>(newFontStyle);
             return style;
         }
