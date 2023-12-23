@@ -1,12 +1,13 @@
-﻿using UIToolkitCodex;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
+namespace UIToolkitCodex.Elements
 {
     public class ResizableWindow : VisualElement
     {
         private readonly VisualElement _contentContainer;
+
+        public new class UxmlFactory : UxmlFactory<ResizableWindow, UxmlTraits> { }
 
         public ResizableWindow()
         {

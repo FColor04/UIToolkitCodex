@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
+namespace UIToolkitCodex.Elements
 {
     public enum GradientDirection
     {
@@ -10,7 +10,7 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
         Horizontal,
         Vertical
     }
- 
+
     public class GradientElement : VisualElement
     {
         private static readonly Vertex[] Vertices = new Vertex[4];
@@ -22,7 +22,7 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
 
         private Color _gradientFrom;
         private Color _gradientTo;
- 
+
         public GradientElement()
         {
             generateVisualContent += GenerateVisualContent;
@@ -40,9 +40,9 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
 
         private void OnStylesResolved(CustomStyleResolvedEvent @event)
         {
-            if(_gradientFrom == default)
+            if (_gradientFrom == default)
                 @event.customStyle.TryGetValue(_gradientFromProperty, out _gradientFrom);
-            if(_gradientTo == default)
+            if (_gradientTo == default)
                 @event.customStyle.TryGetValue(_gradientToProperty, out _gradientTo);
             if (_gradientDirection == default)
             {
@@ -63,10 +63,10 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
             var rect = contentRect;
             if (rect.width < 0.1f || rect.height < 0.1f)
                 return;
- 
+
             UpdateVerticesTint();
             UpdateVerticesPosition(rect);
- 
+
             var meshWriteData = meshGenerationContext.Allocate(Vertices.Length, Indices.Length);
             meshWriteData.SetAllVertices(Vertices);
             meshWriteData.SetAllIndices(Indices);
@@ -78,7 +78,7 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
             var right = rect.x + rect.width;
             var top = rect.y;
             var bottom = rect.y + rect.height;
- 
+
             Vertices[0].position = new Vector3(left, bottom, Vertex.nearZ);
             Vertices[1].position = new Vector3(left, top, Vertex.nearZ);
             Vertices[2].position = new Vector3(right, top, Vertex.nearZ);
@@ -102,11 +102,11 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
                 Vertices[3].tint = _gradientTo;
             }
         }
- 
+
         public new class UxmlFactory : UxmlFactory<GradientElement, GradientElementUxmlTraits>
         {
         }
- 
+
         public class GradientElementUxmlTraits : UxmlTraits
         {
         }

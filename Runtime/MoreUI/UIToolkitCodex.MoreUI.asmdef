@@ -1,7 +1,10 @@
 {
-  "name": "UIToolkitCodex",
+  "name": "UIToolkitCodex.MoreUI",
   "rootNamespace": "UIToolkitCodex",
-  "references": [],
+  "references": [
+    "Unity.InputSystem",
+    "UIToolkitCodex"
+  ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

@@ -1,9 +1,8 @@
-﻿using UIToolkitCodex;
-using UIToolkitCodex.Palettes;
+﻿using UIToolkitCodex.Palettes;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
+namespace UIToolkitCodex.Elements
 {
     public class Icon : Image
     {

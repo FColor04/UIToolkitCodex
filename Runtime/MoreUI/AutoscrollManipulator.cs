@@ -1,7 +1,7 @@
 ﻿using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI
+namespace UIToolkitCodex
 {
     public class AutoscrollManipulator : Manipulator
     {

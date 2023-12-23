@@ -1,4 +1,34 @@
 ﻿# UIToolkit Codex
+
+Code extensions for UI Toolkit for UIElements editors without uxml's or for cleaner UIE coding
+
+# Installation
+From openupm: https://openupm.com/packages/com.novareactor.uitoolkitcodex/
+
+Or using git in url package manager `git@github.com:FColor04/UIToolkitCodex.git`
+
+[![openupm](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=openupm-downloads&query=%24.downloads&suffix=%2Fmonth&url=https%3A%2F%2Fpackage.openupm.com%2Fdownloads%2Fpoint%2Flast-month%2Fcom.novareactor.uitoolkitcodex)](https://openupm.com/packages/com.novareactor.uitoolkitcodex/)
+
+<!-- TOC -->
+* [UIToolkit Codex](#uitoolkit-codex)
+* [Installation](#installation)
+* [Why?](#why)
+  * [Turn this:](#turn-this)
+  * [Into that:](#into-that)
+    * [Makes inline style actually readable](#makes-inline-style-actually-readable)
+        * [And has adaptive color palettes for light & dark editor themes & Tailwind colors](#and-has-adaptive-color-palettes-for-light--dark-editor-themes--tailwind-colors)
+  * [Tailwind adaptive colors!](#tailwind-adaptive-colors)
+* [All features:](#all-features)
+* [UI Elements](#ui-elements)
+  * [Alert element](#alert-element)
+* [Plugin is still in development](#plugin-is-still-in-development)
+<!-- TOC -->
+
+---
+# Why?
+
+To write styled editors within code without uxml's
+
 ## Turn this:
 ```csharp
 [CustomPropertyDrawer(typeof(bool))]
@@ -37,9 +67,12 @@ public class ExampleEditor : PropertyDrawer
         return root;
     }
 }
+
+---
+
 ```
 ### Makes inline style actually readable
-##### And has adaptive color palettes for light & dark editor themes & Tailwind colors
+**And has adaptive color palettes for light & dark editor themes & Tailwind colors**
 ```csharp
 new Label("Hello world!").Stylize(s => s.W(400).FlexCenter().TextCenter().Text4Xl().Bold().Bg(EditorPalette.AccentColor));
 ```
@@ -69,8 +102,9 @@ public override VisualElement CreatePropertyGUI(SerializedProperty property)
 
 ![tw-colors.png](Documentation~/tw-colors.png)
 ![tw-colors.png](Documentation~/tw-colors-light.png)
+---
 
-#### All features:
+# All features:
 - Adaptive colors, 22 tailwind palettes, 1 unity palette
 - Rem unit for text sizes
 - Style extensions for visual elements & derivatives, including:
@@ -84,5 +118,22 @@ public override VisualElement CreatePropertyGUI(SerializedProperty property)
   - Overflow
   - Text
 
-### Plugin is still in development
+
+
+# UI Elements
+
+---
+
+## Alert element
+```csharp 
+    new Alert("Info!", TailwindPalette.Blue)
+    new Alert("Warning!", TailwindPalette.Yellow)
+    new Alert("Error!", TailwindPalette.Red)
+```
+![alert-dark.png](Documentation%7E%2Falert-dark.png)
+![alert-light.png](Documentation%7E%2Falert-light.png)
+
+---
+
+# Plugin is still in development
 Made by FColor04

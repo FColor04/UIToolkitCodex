@@ -2,7 +2,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI
+namespace UIToolkitCodex
 {
     public static class UIInputUtility
     {

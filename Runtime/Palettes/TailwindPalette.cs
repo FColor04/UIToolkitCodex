@@ -7,30 +7,31 @@ namespace UIToolkitCodex.Palettes
     {
         public static readonly VariantColor[] Palettes =
         {
-            Slate, 
-            Gray, 
-            Zinc, 
-            Neutral, 
-            Stone, 
-            Red, 
-            Orange, 
-            Amber, 
-            Yellow, 
-            Lime, 
-            Green, 
-            Emerald, 
-            Teal, 
-            Cyan, 
-            Sky, 
+            Slate,
+            Gray,
+            Zinc,
+            Neutral,
+            Stone,
+            Red,
+            Orange,
+            Amber,
+            Yellow,
+            Lime,
+            Green,
+            Emerald,
+            Teal,
+            Cyan,
+            Sky,
             Blue,
-            Indigo, 
-            Violet, 
-            Purple, 
-            Fuchsia, 
-            Pink, 
+            Indigo,
+            Violet,
+            Purple,
+            Fuchsia,
+            Pink,
             Rose
         };
-        public static VariantColor Slate => new (
+
+        public static VariantColor Slate => new(
             new Color32(0xf8, 0xfa, 0xfc, 0xff),
             new Color32(0xf1, 0xf5, 0xf9, 0xff),
             new Color32(0xe2, 0xe8, 0xf0, 0xff),
@@ -42,7 +43,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x1e, 0x29, 0x3b, 0xff),
             new Color32(0x0f, 0x17, 0x2a, 0xff),
             new Color32(0x02, 0x06, 0x17, 0xff));
-        public static VariantColor Gray => new (
+
+        public static VariantColor Gray => new(
             new Color32(0xf9, 0xfa, 0xfb, 0xff),
             new Color32(0xf3, 0xf4, 0xf6, 0xff),
             new Color32(0xe5, 0xe7, 0xeb, 0xff),
@@ -54,7 +56,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x1f, 0x29, 0x37, 0xff),
             new Color32(0x11, 0x18, 0x27, 0xff),
             new Color32(0x03, 0x07, 0x12, 0xff));
-        public static VariantColor Zinc => new (
+
+        public static VariantColor Zinc => new(
             new Color32(0xfa, 0xfa, 0xfa, 0xff),
             new Color32(0xf4, 0xf4, 0xf5, 0xff),
             new Color32(0xe4, 0xe4, 0xe7, 0xff),
@@ -66,7 +69,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x27, 0x27, 0x2a, 0xff),
             new Color32(0x18, 0x18, 0x1b, 0xff),
             new Color32(0x09, 0x09, 0x0b, 0xff));
-        public static VariantColor Neutral => new (
+
+        public static VariantColor Neutral => new(
             new Color32(0xfa, 0xfa, 0xfa, 0xff),
             new Color32(0xf5, 0xf5, 0xf5, 0xff),
             new Color32(0xe5, 0xe5, 0xe5, 0xff),
@@ -78,7 +82,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x26, 0x26, 0x26, 0xff),
             new Color32(0x17, 0x17, 0x17, 0xff),
             new Color32(0x0a, 0x0a, 0x0a, 0xff));
-        public static VariantColor Stone => new (
+
+        public static VariantColor Stone => new(
             new Color32(0xfa, 0xfa, 0xf9, 0xff),
             new Color32(0xf5, 0xf5, 0xf4, 0xff),
             new Color32(0xe7, 0xe5, 0xe4, 0xff),
@@ -90,7 +95,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x29, 0x25, 0x24, 0xff),
             new Color32(0x1c, 0x19, 0x17, 0xff),
             new Color32(0x0c, 0x0a, 0x09, 0xff));
-        public static VariantColor Red => new (
+
+        public static VariantColor Red => new(
             new Color32(0xfe, 0xf2, 0xf2, 0xff),
             new Color32(0xfe, 0xe2, 0xe2, 0xff),
             new Color32(0xfe, 0xca, 0xca, 0xff),
@@ -102,7 +108,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x99, 0x1b, 0x1b, 0xff),
             new Color32(0x7f, 0x1d, 0x1d, 0xff),
             new Color32(0x45, 0x0a, 0x0a, 0xff));
-        public static VariantColor Orange => new (
+
+        public static VariantColor Orange => new(
             new Color32(0xff, 0xf7, 0xed, 0xff),
             new Color32(0xff, 0xed, 0xd5, 0xff),
             new Color32(0xfe, 0xd7, 0xaa, 0xff),
@@ -114,7 +121,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x9a, 0x34, 0x12, 0xff),
             new Color32(0x7c, 0x2d, 0x12, 0xff),
             new Color32(0x43, 0x14, 0x07, 0xff));
-        public static VariantColor Amber => new (
+
+        public static VariantColor Amber => new(
             new Color32(0xff, 0xfb, 0xeb, 0xff),
             new Color32(0xfe, 0xf3, 0xc7, 0xff),
             new Color32(0xfd, 0xe6, 0x8a, 0xff),
@@ -126,7 +134,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x92, 0x40, 0x0e, 0xff),
             new Color32(0x78, 0x35, 0x0f, 0xff),
             new Color32(0x45, 0x1a, 0x03, 0xff));
-        public static VariantColor Yellow => new (
+
+        public static VariantColor Yellow => new(
             new Color32(0xfe, 0xfc, 0xe8, 0xff),
             new Color32(0xfe, 0xf9, 0xc3, 0xff),
             new Color32(0xfe, 0xf0, 0x8a, 0xff),
@@ -138,7 +147,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x85, 0x4d, 0x0e, 0xff),
             new Color32(0x71, 0x3f, 0x12, 0xff),
             new Color32(0x42, 0x20, 0x06, 0xff));
-        public static VariantColor Lime => new (
+
+        public static VariantColor Lime => new(
             new Color32(0xf7, 0xfe, 0xe7, 0xff),
             new Color32(0xec, 0xfc, 0xcb, 0xff),
             new Color32(0xd9, 0xf9, 0x9d, 0xff),
@@ -150,7 +160,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x3f, 0x62, 0x12, 0xff),
             new Color32(0x36, 0x53, 0x14, 0xff),
             new Color32(0x1a, 0x2e, 0x05, 0xff));
-        public static VariantColor Green => new (
+
+        public static VariantColor Green => new(
             new Color32(0xf0, 0xfd, 0xf4, 0xff),
             new Color32(0xdc, 0xfc, 0xe7, 0xff),
             new Color32(0xbb, 0xf7, 0xd0, 0xff),
@@ -162,7 +173,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x16, 0x65, 0x34, 0xff),
             new Color32(0x14, 0x53, 0x2d, 0xff),
             new Color32(0x05, 0x2e, 0x16, 0xff));
-        public static VariantColor Emerald => new (
+
+        public static VariantColor Emerald => new(
             new Color32(0xec, 0xfd, 0xf5, 0xff),
             new Color32(0xd1, 0xfa, 0xe5, 0xff),
             new Color32(0xa7, 0xf3, 0xd0, 0xff),
@@ -174,7 +186,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x06, 0x5f, 0x46, 0xff),
             new Color32(0x06, 0x4e, 0x3b, 0xff),
             new Color32(0x02, 0x2c, 0x22, 0xff));
-        public static VariantColor Teal => new (
+
+        public static VariantColor Teal => new(
             new Color32(0xf0, 0xfd, 0xfa, 0xff),
             new Color32(0xcc, 0xfb, 0xf1, 0xff),
             new Color32(0x99, 0xf6, 0xe4, 0xff),
@@ -186,7 +199,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x11, 0x5e, 0x59, 0xff),
             new Color32(0x13, 0x4e, 0x4a, 0xff),
             new Color32(0x04, 0x2f, 0x2e, 0xff));
-        public static VariantColor Cyan => new (
+
+        public static VariantColor Cyan => new(
             new Color32(0xec, 0xfe, 0xff, 0xff),
             new Color32(0xcf, 0xfa, 0xfe, 0xff),
             new Color32(0xa5, 0xf3, 0xfc, 0xff),
@@ -198,7 +212,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x15, 0x5e, 0x75, 0xff),
             new Color32(0x16, 0x4e, 0x63, 0xff),
             new Color32(0x08, 0x33, 0x44, 0xff));
-        public static VariantColor Sky => new (
+
+        public static VariantColor Sky => new(
             new Color32(0xf0, 0xf9, 0xff, 0xff),
             new Color32(0xe0, 0xf2, 0xfe, 0xff),
             new Color32(0xba, 0xe6, 0xfd, 0xff),
@@ -210,7 +225,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x07, 0x59, 0x85, 0xff),
             new Color32(0x0c, 0x4a, 0x6e, 0xff),
             new Color32(0x08, 0x2f, 0x49, 0xff));
-        public static VariantColor Blue => new (
+
+        public static VariantColor Blue => new(
             new Color32(0xef, 0xf6, 0xff, 0xff),
             new Color32(0xdb, 0xea, 0xfe, 0xff),
             new Color32(0xbf, 0xdb, 0xfe, 0xff),
@@ -222,7 +238,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x1e, 0x40, 0xaf, 0xff),
             new Color32(0x1e, 0x3a, 0x8a, 0xff),
             new Color32(0x17, 0x25, 0x54, 0xff));
-        public static VariantColor Indigo => new (
+
+        public static VariantColor Indigo => new(
             new Color32(0xee, 0xf2, 0xff, 0xff),
             new Color32(0xe0, 0xe7, 0xff, 0xff),
             new Color32(0xc7, 0xd2, 0xfe, 0xff),
@@ -234,7 +251,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x37, 0x30, 0xa3, 0xff),
             new Color32(0x31, 0x2e, 0x81, 0xff),
             new Color32(0x1e, 0x1b, 0x4b, 0xff));
-        public static VariantColor Violet => new (
+
+        public static VariantColor Violet => new(
             new Color32(0xf5, 0xf3, 0xff, 0xff),
             new Color32(0xed, 0xe9, 0xfe, 0xff),
             new Color32(0xdd, 0xd6, 0xfe, 0xff),
@@ -246,7 +264,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x5b, 0x21, 0xb6, 0xff),
             new Color32(0x4c, 0x1d, 0x95, 0xff),
             new Color32(0x2e, 0x10, 0x65, 0xff));
-        public static VariantColor Purple => new (
+
+        public static VariantColor Purple => new(
             new Color32(0xfa, 0xf5, 0xff, 0xff),
             new Color32(0xf3, 0xe8, 0xff, 0xff),
             new Color32(0xe9, 0xd5, 0xff, 0xff),
@@ -258,7 +277,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x6b, 0x21, 0xa8, 0xff),
             new Color32(0x58, 0x1c, 0x87, 0xff),
             new Color32(0x3b, 0x07, 0x64, 0xff));
-        public static VariantColor Fuchsia => new (
+
+        public static VariantColor Fuchsia => new(
             new Color32(0xfd, 0xf4, 0xff, 0xff),
             new Color32(0xfa, 0xe8, 0xff, 0xff),
             new Color32(0xf5, 0xd0, 0xfe, 0xff),
@@ -270,7 +290,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x86, 0x19, 0x8f, 0xff),
             new Color32(0x70, 0x1a, 0x75, 0xff),
             new Color32(0x4a, 0x04, 0x4e, 0xff));
-        public static VariantColor Pink => new (
+
+        public static VariantColor Pink => new(
             new Color32(0xfd, 0xf2, 0xf8, 0xff),
             new Color32(0xfc, 0xe7, 0xf3, 0xff),
             new Color32(0xfb, 0xcf, 0xe8, 0xff),
@@ -282,7 +303,8 @@ namespace UIToolkitCodex.Palettes
             new Color32(0x9d, 0x17, 0x4d, 0xff),
             new Color32(0x83, 0x18, 0x43, 0xff),
             new Color32(0x50, 0x07, 0x24, 0xff));
-        public static VariantColor Rose => new (
+
+        public static VariantColor Rose => new(
             new Color32(0xff, 0xf1, 0xf2, 0xff),
             new Color32(0xff, 0xe4, 0xe6, 0xff),
             new Color32(0xfe, 0xcd, 0xd3, 0xff),

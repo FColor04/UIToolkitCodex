@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.UIElements;
-using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
+namespace UIToolkitCodex.Editor
 {
     public class ReorderableList : ListView
     {
@@ -16,12 +13,9 @@ namespace Plugins.CrossPlatformUtilities.UniWind.MoreUI.Elements
             bindItem = (element, i) =>
             {
                 property.serializedObject.Update();
-                ((PropertyField) element).BindProperty(property.GetArrayElementAtIndex(i));
+                ((PropertyField)element).BindProperty(property.GetArrayElementAtIndex(i));
             };
-            unbindItem = (element, i) =>
-            {
-                ((PropertyField) element).Unbind();
-            };
+            unbindItem = (element, i) => { ((PropertyField)element).Unbind(); };
             reorderable = true;
             reorderMode = ListViewReorderMode.Animated;
             showAddRemoveFooter = true;
