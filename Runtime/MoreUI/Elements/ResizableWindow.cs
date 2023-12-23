@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace UIToolkitCodex.Elements
@@ -8,6 +9,11 @@ namespace UIToolkitCodex.Elements
         private readonly VisualElement _contentContainer;
 
         public new class UxmlFactory : UxmlFactory<ResizableWindow, UxmlTraits> { }
+
+        public new class UxmlTraits : VisualElement.UxmlTraits
+        {
+            public override IEnumerable<UxmlChildElementDescription> uxmlChildElementsDescription { get; }
+        }
 
         public ResizableWindow()
         {
