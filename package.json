@@ -1,6 +1,6 @@
 {
   "name": "com.novareactor.uitoolkitcodex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "UIToolkit Codex",
   "description": "Code extensions for UI Toolkit for UIElements editors without uxml's or for cleaner UIE coding",
   "unity": "2020.1",
