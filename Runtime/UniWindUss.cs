@@ -309,6 +309,11 @@ namespace UIToolkitCodex
         #endregion
 
         #region Text
+        public static IStyle Color(this IStyle style, StyleColor color)
+        {
+            style.color = color;
+            return style;
+        }
 
         public static IStyle Bold(this IStyle style)
         {
