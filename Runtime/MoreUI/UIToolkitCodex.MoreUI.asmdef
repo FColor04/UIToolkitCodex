@@ -1,17 +1,17 @@
 {
-  "name": "UIToolkitCodex.MoreUI",
-  "rootNamespace": "UIToolkitCodex",
-  "references": [
-    "Unity.InputSystem",
-    "UIToolkitCodex"
-  ],
-  "includePlatforms": [],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
-  "versionDefines": [],
-  "noEngineReferences": false
+    "name": "UIToolkitCodex.MoreUI",
+    "rootNamespace": "UIToolkitCodex",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:0c0852f1d0efb754cb863eae17a23625"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
