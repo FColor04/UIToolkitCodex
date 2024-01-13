@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using UIToolkitCodex.Palettes;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
